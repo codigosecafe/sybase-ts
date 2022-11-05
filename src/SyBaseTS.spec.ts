@@ -1,5 +1,5 @@
 import {expect, describe, it, jest} from '@jest/globals';
-import SyBaseDB from "./SyBaseDB";
+import SyBaseTS from "./SyBaseTS";
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -19,11 +19,11 @@ const makeReturnSuccess = () =>{
 }
 
 
-describe("SyBaseDB", () => {
+describe("SyBaseTS", () => {
     it("test isConnected", async () => {
 
         const dataConection = makeDataConection();
-        const sut = new SyBaseDB({ dataConection });
+        const sut = new SyBaseTS({ dataConection });
 
         jest.spyOn(sut, 'connect').mockResolvedValueOnce(await makeReturnSuccess());
         jest.spyOn(sut, 'isConnected').mockReturnValue(true)
@@ -36,7 +36,7 @@ describe("SyBaseDB", () => {
 
     it("test query", async () => {
         const dataConection = makeDataConection();
-        const sut = new SyBaseDB({ dataConection });
+        const sut = new SyBaseTS({ dataConection });
 
         jest.spyOn(sut, 'connect').mockResolvedValueOnce(await makeReturnSuccess());
         jest.spyOn(sut, 'disconnect').mockResolvedValueOnce(await makeReturnSuccess());

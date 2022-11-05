@@ -1,7 +1,7 @@
-import DBSyBaseBase from "./DBSyBaseBase";
+import DBSyBaseBase from "./domain/DBSyBaseBase";
 import { OperationReturnProtocols } from "./protocols/OperationReturnProtocols";
 
-class SyBaseDB extends DBSyBaseBase {
+class SyBaseTS extends DBSyBaseBase {
     isConnected = () => this.DBisConnected();
     connect = () =>
         new Promise<OperationReturnProtocols>((resolve, reject) => {
@@ -32,4 +32,4 @@ class SyBaseDB extends DBSyBaseBase {
         });
 }
 
-export default SyBaseDB;
+export default SyBaseTS;

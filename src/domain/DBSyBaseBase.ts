@@ -1,7 +1,7 @@
 import path from "path";
 import child_process, { ChildProcess } from "child_process";
-import { DataConectionProtocols } from "./protocols/DataConectionProtocols";
-import {CallBackError , Callback, TSMessage, JavaMessage} from "./types"
+import { DataConectionProtocols } from "../protocols/DataConectionProtocols";
+import {CallBackError , Callback, TSMessage, JavaMessage} from "../types"
 import SyBaseDBLog from "./SyBaseDBLog";
 import * as JSONStream from 'JSONStream';
 
