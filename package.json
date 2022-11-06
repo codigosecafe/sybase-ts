@@ -21,14 +21,6 @@
         "url": "https://github.com/codigosecafe/sybase-ts/issues"
     },
     "homepage": "https://github.com/codigosecafe/sybase-ts#readme",
-    "jest": {
-        "preset": "ts-jest",
-        "testEnvironment": "node",
-        "coveragePathIgnorePatterns": [
-            "/node_modules/",
-            "build"
-        ]
-    },
     "files": [
         "build/**/*"
     ],
