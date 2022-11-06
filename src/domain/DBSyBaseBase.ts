@@ -51,7 +51,8 @@ class DBSyBaseBase {
         if (this.pathToJavaBridge === undefined) {
             this.pathToJavaBridge = path.resolve(
                 __dirname,
-                "../..",
+                "..",
+                "..",
                 "JavaSybaseLink",
                 "dist",
                 "JavaSybaseLink.jar"
