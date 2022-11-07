@@ -7,7 +7,6 @@ class SyBaseDBLog {
     };
 
     run = (...msg: (string | number)[]): void => {
-        this.extraLogs = true;
         if (this.extraLogs) {
             console.log(msg);
         }
